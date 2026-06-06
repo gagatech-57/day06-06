@@ -105,12 +105,11 @@ const MarkList = () => {
       />
       <button onClick={handleAddMark} style={buttonStyle}>Add Mark</button>
     
-      <ul style={{ listStyleType: "none ", padding: 0 }}>
-        <li><strong>Marks:</strong></li>
-        {marks.map((mark, index) => (
-          <li key={index}>{mark}</li>
-        ))}
-      </ul>
+   <ul>
+      {marks.map((mark, index) => (
+        <li key={index}>{mark}</li>
+      ))}  
+    </ul>
 
     </div>
   );
